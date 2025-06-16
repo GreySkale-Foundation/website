@@ -1,5 +1,5 @@
 # Website 
-
+[![Netlify Status](https://api.netlify.com/api/v1/badges/ff087878-b3d9-467a-ae12-82bc952849e4/deploy-status)](https://app.netlify.com/projects/greyskale/deploys)
 Svelte under the hood.
 
 ## Developing
