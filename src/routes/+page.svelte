@@ -1,5 +1,6 @@
 <script>
     import GSKLogo from '$lib/assets/gsklogo.svg';
+    import About from '$lib/components/about.svelte';
 </script>
 
 
@@ -14,13 +15,12 @@
     class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap text-center text-2xl font-semibold text-white"
     style="font-family:'Trebuchet MS', 'sans-serif';">
     Be who you ought to be.
-    </div>
-
+    </div> 
     </div>
     </section>
-    <section class="min-h-[30vh] bg-linear-to-b from-black from-30% via-pink-400 via-50% to-white to-70%">
-
-      <p><b>sadaadsadasdsadhakjsadda</b></p>
+     
+    <section class="min-h-[30vh] bg-linear-to-b from-black from-30% via-pink-400 via-50% to-white to-100%">
 
     </section>
+    <About />
 </div>
