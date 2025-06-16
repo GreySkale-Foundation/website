@@ -1,6 +1,5 @@
 <script>
     import GSKLogo from '$lib/assets/gsklogo.svg';
-    import Events from '$lib/components/events.svelte';
     import About from '$lib/components/about.svelte';
 </script>
 
