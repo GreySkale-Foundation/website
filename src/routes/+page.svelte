@@ -3,7 +3,6 @@
     import About from '$lib/components/about.svelte';
     import Card from '$lib/components/card.svelte'
     import Events from '$lib/components/events.svelte';
-    import Bento from '$lib/components/bento.svelte';
 </script>
 
 
@@ -26,5 +25,23 @@
 
     </section>
     <About />
-    <Card />
+    <section class="mb-10">
+</section>
+<section class="pt-500">
+</section>
+  <section class="min-h-[30vh] bg-linear-to-b from-white from-30% via-pink-400 via-50% to-black to-100%">
+ 
+
+<section class="mb-10">
+</section>
+<section class="pt-500">
+</section>
+   
+<Card />
+<footer class="w-full px-6 py-4 text-white text-sm flex justify-between items-center">
+  <p class="text-gray-400">Made with GreySkale</p>
+  <p class="text-gray-400">Made with ❤️</p>
+</footer>
+
+</section>
 </div>
