@@ -1,6 +1,9 @@
 <script>
     import GSKLogo from '$lib/assets/gsklogo.svg';
     import About from '$lib/components/about.svelte';
+    import Card from '$lib/components/card.svelte'
+    import Events from '$lib/components/events.svelte';
+    import Bento from '$lib/components/bento.svelte';
 </script>
 
 
@@ -23,4 +26,5 @@
 
     </section>
     <About />
+    <Card />
 </div>
