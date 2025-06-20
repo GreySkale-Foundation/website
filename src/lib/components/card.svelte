@@ -33,12 +33,15 @@
   ></div>
 
   <!-- Front Card -->
-  <div class="flex flex-col items-start gap-6 p-9 rounded-2xl bg-gray-200 text-gray-800 z-10 w-full h-full shadow-lg">
-    <p class="text-[18px] leading-relaxed font-medium">
+   
+  <div class="flex flex-col items-center gap-6 p-9 rounded-2xl bg-gray-200 text-gray-800 z-10 w-full h-full shadow-lg">
+    <p class="text-[18px] leading-relaxed font-medium text-center">
       PING US
     </p>
-    <a href="/about" class="text-blue-600 text-[16px] hover:underline">
-  Read more
+    <a href="/greyskalerobotics@gmail.com" class="text-blue-600 text-[16px] hover:underline text-center">
+  Mail us
 </a>
   </div>
 </div>
+
+
