@@ -40,11 +40,11 @@
     <Card />
     </div>
 
-    <footer
-      class="w-full px-6 py-4 text-white text-sm flex justify-between items-center"
-    >
-      <p class="text-gray-400">Made by GreySkale</p>
-      <p class="text-gray-400">Made with ❤️</p>
+    <footer class="flex justify-between items-center px-8 py-4 text-sm text-white">
+  <p class="ml-8">Made by greyskale</p> <!-- moved slightly right -->
+  <p class="mr-8">Made with ❤</p> <!-- moved slightly left -->
     </footer>
+
+
   </section>
 </div>
