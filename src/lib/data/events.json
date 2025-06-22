@@ -1,0 +1,26 @@
+[
+        {
+            "image" : "src/lib/assets/event.svg",
+            "title" : "Company Weekly",
+            "desc" : "Events done on a weekly basisEvents done on a weekly basisEvents done on a weekly basis Events done on a weekly basis",
+            "author" : "https://linkedin.com/in/username",
+            "author_image" :"src/lib/assets/event.svg",
+            "layout" : {"col" : 2, "row": 2}
+        },
+    {
+            "image" : "src/lib/assets/event.svg",
+            "title" : "Company Weekly",
+            "desc" : "e on a weekly basisEvents done on a weekly basisEvents done on a weekly basis Events done on a weekly basis",
+            "author" : "https://linkedin.com/in/username",
+            "author_image" :"src/lib/assets/event.svg",
+            "layout" : {"col" : 1, "row": 1}
+        },
+        {
+            "image" : "src/lib/assets/event.svg",
+            "title" : "Company W",
+            "desc" : "Events d Events done on a weekly basis",
+            "author" : "https://linkedin.com/in/username",
+            "author_image" :"src/lib/assets/event.svg",
+            "layout" : {"col" : 1, "row": 1}
+        }
+]
