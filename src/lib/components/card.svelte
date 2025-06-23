@@ -1,6 +1,13 @@
 <script>
   import classNames from "classnames";
   let hovered = false;
+  import InstaImage from '$lib/assets/Instagram.svg'
+
+  import LinkedInImage from '$lib/assets/Linkedin.svg'
+  import GithubImage from '$lib/assets/github.svg'
+
+  import MailImage from '$lib/assets/Mail.svg'
+  import YoutubeImage from '$lib/assets/Youtube.svg'
 </script>
 
 <!-- Wrapper -->
@@ -27,7 +34,7 @@
       <div class="absolute left-4 top-1/3 -translate-y-1/2 flex flex-col gap-6">
         <a href="https://www.instagram.com" target="_blank" rel="noopener">
           <img
-            src="/src/lib/assets/instagram.svg"
+            src={InstaImage}
             alt="Instagram"
             class="w-9 h-9"
           />
@@ -38,7 +45,7 @@
           rel="noopener"
         >
           <img
-            src="/src/lib/assets/youtube.svg"
+            src={YoutubeImage}
             alt="YouTube"
             class="w-9 h-9"
           />
@@ -62,11 +69,11 @@
         class="absolute right-4 top-1/3 -translate-y-1/2 flex flex-col gap-6 items-end"
       >
         <a href="https://github.com" target="_blank" rel="noopener">
-          <img src="/src/lib/assets/github.svg" alt="GitHub" class="w-9 h-9" />
+          <img src={GithubImage} alt="GitHub" class="w-9 h-9" />
         </a>
         <a href="https://linkedin.com" target="_blank" rel="noopener">
           <img
-            src="/src/lib/assets/linkedin.svg"
+            src={LinkedInImage}
             alt="LinkedIn"
             class="w-9 h-9"
           />
@@ -80,16 +87,11 @@
     class="relative z-10 w-[457px] h-[371px] bg-gray-200 rounded-2xl shadow-lg flex flex-col justify-center items-center text-center px-6"
   >
     <h2 class="text-xl font-bold mb-4">Ping us!</h2>
-    <svg
-      class="w-8 h-8 mb-4"
-      fill="none"
-      stroke="currentColor"
-      stroke-width="2"
-      viewBox="0 0 24 24"
-    >
-      <path stroke-linecap="round" stroke-linejoin="round" d="M4 4h16v16H4z" />
-      <path stroke-linecap="round" stroke-linejoin="round" d="M4 4l8 8 8-8" />
-    </svg>
-    <p class="italic text-sm">don’t worry we are socially awkward too ;)</p>
+    
+<a href="mailto:greyskalerobotics@gmail.com?subject=Psss..">
+
+        <img class="w-28 h-auto" src={MailImage} alt="Mail Us" />
+        </a>
+        <p class="italic text-sm">don’t worry we are socially awkward too ;)</p>
   </div>
 </div>
