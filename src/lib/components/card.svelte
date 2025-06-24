@@ -1,6 +1,7 @@
 <script>
   import classNames from "classnames";
   let hovered = false;
+  import InstaImage from '$lib/assets/instagram.svg'
 </script>
 
 <!-- Wrapper -->
@@ -27,7 +28,7 @@
       <div class="absolute left-4 top-1/3 -translate-y-1/2 flex flex-col gap-6">
         <a href="https://www.instagram.com" target="_blank" rel="noopener">
           <img
-            src="/src/lib/assets/instagram.svg"
+            src={InstaImage}
             alt="Instagram"
             class="w-9 h-9"
           />
