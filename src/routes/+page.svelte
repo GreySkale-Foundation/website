@@ -3,6 +3,8 @@
   import About from "$lib/components/about.svelte";
   import Card from "$lib/components/card.svelte";
   import Events from "$lib/components/events.svelte";
+  import Text from "$lib/components/text.svelte";
+  import Tiles from "$lib/components/tiles.svelte";
 </script>
 
 <!-- class="min-h-48 w-full bg-linear-to-b from-black from-40% via-pink-400 via-50% to-white to-60%"> -->
@@ -30,9 +32,11 @@
   <About />
   <section class="mb-10"></section>
   <section class="pt-500"></section>
+  <!-- <Text /> -->
   <section
     class="min-h-[30vh] bg-linear-to-b from-white from-30% via-pink-400 via-50% to-black to-100%"
   >
+    <section><Tiles /></section>
     <section class="mb-10"></section>
     <section class="pt-500"></section>
 
