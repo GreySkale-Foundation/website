@@ -5,6 +5,7 @@
   import LinkedImage from '$lib/assets/linkedin-white.svg'
   import GitImage from '$lib/assets/gitwhite.svg'
   import YoutubeImage from '$lib/assets/youtubewhite.svg'
+  import MailImage from '$lib/assets/Mail.svg'
 </script>
 
 <!-- Wrapper -->
@@ -17,7 +18,6 @@
   on:blur={() => (hovered = false)}
   class="relative flex items-center justify-center w-[457px] h-[371px] rounded-2xl transition-all duration-[480ms] ease-[cubic-bezier(0.23,1,0.32,1)] group outline-none mx-auto my-12"
 >
-  
   <div
     class={classNames(
       "absolute left-1/2 bg-gray-500 rounded-2xl -z-10 origin-bottom-left transition-all duration-[480ms] ease-[cubic-bezier(0.23,1,0.32,1)]",
@@ -84,16 +84,11 @@
     class="relative z-10 w-[457px] h-[371px] bg-gray-200 rounded-2xl shadow-lg flex flex-col justify-center items-center text-center px-6"
   >
     <h2 class="text-xl font-bold mb-4">Ping us!</h2>
-    <svg
-      class="w-8 h-8 mb-4"
-      fill="none"
-      stroke="currentColor"
-      stroke-width="2"
-      viewBox="0 0 24 24"
-    >
-      <path stroke-linecap="round" stroke-linejoin="round" d="M4 4h16v16H4z" />
-      <path stroke-linecap="round" stroke-linejoin="round" d="M4 4l8 8 8-8" />
-    </svg>
-    <p class="italic text-sm">don’t worry we are socially awkward too ;)</p>
+    
+<a href="mailto:greyskalerobotics@gmail.com?subject=Psss..">
+
+        <img class="w-28 h-auto" src={MailImage} alt="Mail Us" />
+        </a>
+        <p class="italic text-sm">don't worry we are socially awkward too hehe</p>
   </div>
 </div>
