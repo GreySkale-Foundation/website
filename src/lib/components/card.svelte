@@ -1,7 +1,7 @@
 <script>
   import classNames from "classnames";
   let hovered = false;
-  import InstaImage from '$lib/assets/instagram.svg'
+  import InstaImage from '$lib/assets/instagram-white.svg'
 </script>
 
 <!-- Wrapper -->
@@ -39,7 +39,7 @@
           rel="noopener"
         >
           <img
-            src="/src/lib/assets/youtube.svg"
+            src="/src/lib/assets/youtubewhite.svg"
             alt="YouTube"
             class="w-9 h-9"
           />
@@ -63,11 +63,11 @@
         class="absolute right-4 top-1/3 -translate-y-1/2 flex flex-col gap-6 items-end"
       >
         <a href="https://github.com" target="_blank" rel="noopener">
-          <img src="/src/lib/assets/github.svg" alt="GitHub" class="w-9 h-9" />
+          <img src="/src/lib/assets/gitwhite.svg" alt="GitHub" class="w-9 h-9" />
         </a>
         <a href="https://linkedin.com" target="_blank" rel="noopener">
           <img
-            src="/src/lib/assets/linkedin.svg"
+            src="/src/lib/assets/linkedin-white.svg"
             alt="LinkedIn"
             class="w-9 h-9"
           />
