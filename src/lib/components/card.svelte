@@ -1,13 +1,11 @@
 <script>
   import classNames from "classnames";
   let hovered = false;
-  import InstaImage from '$lib/assets/Instagram.svg'
-
-  import LinkedInImage from '$lib/assets/Linkedin.svg'
-  import GithubImage from '$lib/assets/github.svg'
-
+  import InstaImage from '$lib/assets/instagram-white.svg'
+  import LinkedImage from '$lib/assets/linkedin-white.svg'
+  import GitImage from '$lib/assets/gitwhite.svg'
+  import YoutubeImage from '$lib/assets/youtubewhite.svg'
   import MailImage from '$lib/assets/Mail.svg'
-  import YoutubeImage from '$lib/assets/Youtube.svg'
 </script>
 
 <!-- Wrapper -->
@@ -31,7 +29,7 @@
   >
     {#if hovered}
       <div class="absolute left-4 top-1/3 -translate-y-1/2 flex flex-col gap-6">
-        <a href="https://www.instagram.com" target="_blank" rel="noopener">
+        <a href="https://www.instagram.com/greyskalerobotics?igsh=MWE0ejk2cGNoOW1vaw==" target="_blank" rel="noopener">
           <img
             src={InstaImage}
             alt="Instagram"
@@ -67,12 +65,12 @@
       <div
         class="absolute right-4 top-1/3 -translate-y-1/2 flex flex-col gap-6 items-end"
       >
-        <a href="https://github.com" target="_blank" rel="noopener">
-          <img src={GithubImage} alt="GitHub" class="w-9 h-9" />
+        <a href="https://github.com/orgs/GreySkale-Foundation" target="_blank" rel="noopener">
+          <img src={GitImage} alt="GitHub" class="w-12 h-12" />
         </a>
-        <a href="https://linkedin.com" target="_blank" rel="noopener">
+        <a href="https://www.linkedin.com/company/greyskale-robotics" target="_blank" rel="noopener">
           <img
-            src={LinkedInImage}
+            src={LinkedImage}
             alt="LinkedIn"
             class="w-9 h-9"
           />
@@ -91,6 +89,6 @@
 
         <img class="w-28 h-auto" src={MailImage} alt="Mail Us" />
         </a>
-        <p class="italic text-sm">don’t worry we are socially awkward too ;)</p>
+        <p class="italic text-sm">don't worry we are socially awkward too hehe</p>
   </div>
 </div>
