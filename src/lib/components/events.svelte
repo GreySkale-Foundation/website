@@ -1,28 +1,65 @@
 <script>
-  export let event; // { id, posterUrl, status, hostAvatar }
+    import EventCard from "$lib/components/event_card.svelte";
+    import Image from "$lib/assets/event.svg";
 </script>
 
-<div class="relative w-48 h-48 group cursor-pointer">
-  <!-- Event Poster (Dims on hover) -->
-  <img
-    src={event.posterUrl}
-    alt="Event poster"
-    class="w-full h-full object-cover group-hover:brightness-65 transition"
-  />
-
-  <!-- Status Badge (Top-Left) -->
-  <div class="absolute top-2 left-2 px-2 py-1 text-xs font-medium rounded-full
-              bg-black/70 text-white">
-    {event.status}
-  </div>
-
-  <!-- Host Avatar (Bottom-Right) -->
-  <div class="absolute bottom-2 right-2 w-8 h-8 rounded-full overflow-hidden
-              border-2 border-white">
-    <img
-      src={event.hostAvatar}
-      alt="Host"
-      class="w-full h-full object-cover"
-    />
-  </div>
+<div class="flex h-full w-full items-center justify-center">
+    <div
+        class="grid h-full w-full gap-4 p-2 grid-cols-4 auto-rows-[175px] max-w-[1050px]"
+    >
+        <div
+            class="relative col-span-2 row-span-1 rounded-lg shadow-md flex items-center justify-center"
+        >
+            <div
+                class="h-full w-full flex justify-center items-center bg-pink-500 font-bold rounded-lg"
+            >
+                Blog
+            </div>
+        </div>
+        <div
+            class="relative col-span-2 row-span-1 rounded-lg shadow-md flex items-center justify-center"
+        >
+            <div
+                class="h-full w-full flex justify-center items-center bg-pink-300 font-bold rounded-lg"
+            >
+                Blog
+            </div>
+        </div>
+        <div
+            class="relative col-span-1 row-span-2 rounded-lg shadow-md flex items-center justify-center"
+        >
+            <EventCard
+                title="Hello"
+                image={Image}
+                description="Hello, I am ashwin P shine"
+            />
+        </div>
+        <div
+            class="relative col-span-2 row-span-2 rounded-lg shadow-md flex items-center justify-center"
+        >
+            <EventCard
+                title="Hello"
+                image={Image}
+                description="Hello, I am ashwin P shine"
+            />
+        </div>
+        <div
+            class="relative col-span-1 row-span-2 rounded-lg shadow-md flex items-center justify-center"
+        >
+            <EventCard
+                title="Hello"
+                image={Image}
+                description="Hello, I am ashwin P shine"
+            />
+        </div>
+        <div
+            class="relative col-span-4 row-span-1 rounded-lg shadow-md flex items-center justify-center"
+        >
+            <div
+                class="h-full w-full flex justify-center items-center bg-pink-700 font-bold rounded-lg"
+            >
+                Newsletter
+            </div>
+        </div>
+    </div>
 </div>
