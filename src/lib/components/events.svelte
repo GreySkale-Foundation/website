@@ -58,7 +58,7 @@
             <div
                 class="h-full w-full flex justify-center items-center bg-pink-700 font-bold rounded-lg"
             >
-               Newsletter 
+                Newsletter
             </div>
         </div>
     </div>
