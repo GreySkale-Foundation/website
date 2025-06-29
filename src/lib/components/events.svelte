@@ -1,6 +1,12 @@
 <script>
     import EventCard from "$lib/components/event_card.svelte";
     import Image from "$lib/assets/event.svg";
+    import {eventMaker} from "$lib/scripts/events"
+
+
+    const monthlyEvent = eventMaker("Monthly",Image,"Hello How are you")
+    const majorEvent = eventMaker("MAIN EVENT", Image, "Very dope event")
+    const weeklyEvent = eventMaker("Weekly", Image, "This is done by Chandra Rajesh")
 </script>
 
 <div class="flex h-full w-full items-center justify-center">
@@ -29,27 +35,27 @@
             class="relative col-span-1 row-span-2 rounded-lg shadow-md flex items-center justify-center"
         >
             <EventCard
-                title="Hello"
-                image={Image}
-                description="Hello, I am ashwin P shine"
+                title={monthlyEvent.eventTitle}
+                image={monthlyEvent.eventImage}
+                description={monthlyEvent.eventDesc}
             />
         </div>
         <div
             class="relative col-span-2 row-span-2 rounded-lg shadow-md flex items-center justify-center"
         >
             <EventCard
-                title="Hello"
-                image={Image}
-                description="Hello, I am ashwin P shine"
+                title={majorEvent.eventTitle}
+                image={majorEvent.eventImage}
+                description={majorEvent.eventDesc}
             />
         </div>
         <div
             class="relative col-span-1 row-span-2 rounded-lg shadow-md flex items-center justify-center"
         >
             <EventCard
-                title="Hello"
-                image={Image}
-                description="Hello, I am ashwin P shine"
+                title={weeklyEvent.eventTitle}
+                image={weeklyEvent.eventImage}
+                description={weeklyEvent.eventDesc}
             />
         </div>
         <div
