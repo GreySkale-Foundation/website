@@ -4,11 +4,14 @@
     import Card from "$lib/components/card.svelte";
     import Events from "$lib/components/events.svelte";
     import Tiles from "$lib/components/tiles.svelte";
+    import lockImage from "$lib/assets/Lock.svg";
 </script>
 
 <!-- class="min-h-48 w-full bg-linear-to-b from-black from-40% via-pink-400 via-50% to-white to-60%"> -->
 <div>
-    <section class="flex items-center justify-center min-h-[90vh] bg-black">
+    <section
+        class="flex items-center justify-center min-h-[90vh] bg-black snap-center"
+    >
         <div class="group relative">
             <img
                 src={GSKLogo}
@@ -26,37 +29,50 @@
     </section>
 
     <section
-        class="min-h-[30vh] bg-linear-to-b from-black from-30% via-pink-400 via-50% to-white to-100%"
+        class="min-h-[50vh] bg-linear-to-b from-black from-30% via-pink-400 via-55% to-white to-100%"
     ></section>
 
     <section>
         <About />
     </section>
 
-    <div class="mb-4 pt-56"></div>
-    <section class="h-auto">
+    <div class="pt-80"></div>
+
+    <section class="h-auto snap-center">
         <Events />
     </section>
 
-
+    <div class="pt-48"></div>
     <section
-        class="min-h-[30vh] bg-linear-to-b from-white from-30% via-pink-400 via-50% to-black to-100%"
+        class="min-h-[30vh] bg-linear-to-b from-white from-20% via-pink-400 via-50% to-black to-100%"
     >
-        <section><Tiles /></section>
-        <section class="mb-10"></section>
-        <section class="pt-500"></section>
+        <section class="snap-center h-auto"><Tiles /></section>
 
-        <div class="relative z-10">
+        <div class="pt-80"></div>
+
+        <section class="snap-center h-auto">
+            <div
+                class="w-[440px] h-44 bg-white mx-auto rounded-lg flex items-center justify-center text-center"
+            >
+                <h1 class="text-gray-400 font-bold text-3xl">PRODUCTS</h1>
+                <h3 class="absolute mt-24">Yet to be unlocked.</h3>
+                <img src={lockImage} alt="Locked" class="w-6 h-6 ml-0.5" />
+            </div>
+        </section>
+
+        <div class="pt-80"></div>
+        <section class="relative snap-center z-10">
             <Card />
-        </div>
-
-        <footer
-            class="flex justify-between items-center px-8 py-4 text-sm text-white"
-        >
-            <p class="ml-8">Made by greyskale</p>
-            <!-- moved slightly right -->
-            <p class="mr-8">Made with ❤</p>
-            <!-- moved slightly left -->
-        </footer>
+        </section>
+        <section>
+            <footer
+                class="flex justify-between items-center px-8 py-4 text-sm text-white font-bold"
+            >
+                <p class="ml-8 mb-2">Made by greyskale</p>
+                <!-- moved slightly right -->
+                <p class="mr-8 mb-2">Made with <b class="text-lg">❤</b></p>
+                <!-- moved slightly left -->
+            </footer>
+        </section>
     </section>
 </div>
