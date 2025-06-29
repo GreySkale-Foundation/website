@@ -9,7 +9,9 @@
 
 <!-- class="min-h-48 w-full bg-linear-to-b from-black from-40% via-pink-400 via-50% to-white to-60%"> -->
 <div>
-    <section class="flex items-center justify-center min-h-[90vh] bg-black">
+    <section
+        class="flex items-center justify-center min-h-[90vh] bg-black snap-center"
+    >
         <div class="group relative">
             <img
                 src={GSKLogo}
@@ -34,9 +36,9 @@
         <About />
     </section>
 
-
     <div class="pt-80"></div>
-    <section class="h-auto">
+
+    <section class="h-auto snap-center">
         <Events />
     </section>
 
@@ -44,10 +46,11 @@
     <section
         class="min-h-[30vh] bg-linear-to-b from-white from-20% via-pink-400 via-50% to-black to-100%"
     >
-        <section><Tiles /></section>
+        <section class="snap-center h-auto"><Tiles /></section>
 
-    <div class="pt-80"></div>
-        <section>
+        <div class="pt-80"></div>
+
+        <section class="snap-center h-auto">
             <div
                 class="w-[440px] h-44 bg-white mx-auto rounded-lg flex items-center justify-center text-center"
             >
@@ -57,17 +60,17 @@
             </div>
         </section>
 
-    <div class="pt-80"></div>
-        <section class="relative z-10">
+        <div class="pt-80"></div>
+        <section class="relative snap-center z-10">
             <Card />
         </section>
         <section>
             <footer
-                class="flex justify-between items-center px-8 py-4 text-sm text-white"
+                class="flex justify-between items-center px-8 py-4 text-sm text-white font-bold"
             >
-                <p class="ml-8">Made by greyskale</p>
+                <p class="ml-8 mb-2">Made by greyskale</p>
                 <!-- moved slightly right -->
-                <p class="mr-8">Made with ❤</p>
+                <p class="mr-8 mb-2">Made with <b class="text-lg">❤</b></p>
                 <!-- moved slightly left -->
             </footer>
         </section>
