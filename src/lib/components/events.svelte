@@ -1,7 +1,8 @@
 <script>
     import EventCard from "$lib/components/event_card.svelte";
-    import Image from "$lib/assets/event.svg";
-    import Image2 from '$lib/assets/event2.svg'
+    import Image from "$lib/assets/event/event.svg";
+    import Image2 from '$lib/assets/event/event2.svg'
+    import Newsletter from '$lib/assets/misc/june25.pdf';
     import {eventMaker} from "$lib/scripts/events"
 
 
@@ -63,9 +64,11 @@
             class="relative col-span-4 row-span-1 rounded-lg shadow-md flex items-center justify-center"
         >
             <div
-                class="h-full w-full flex justify-center items-center bg-pink-700 font-bold rounded-lg"
+                class="h-full w-full flex justify-center items-center bg-white border border-black font-courier-prime font-bold rounded-lg text-xl"
             >
-                Newsletter
+                <a href={Newsletter} download="June 2025">
+                Download our monthly newsletter
+                </a>
             </div>
         </div>
     </div>
