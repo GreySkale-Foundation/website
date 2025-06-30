@@ -29,7 +29,7 @@
     </section>
 
     <section
-        class="min-h-[50vh] bg-linear-to-b from-black from-30% via-pink-400 via-55% to-white to-100%"
+        class="min-h-[50vh] bg-linear-to-b from-black from-30% via-pink-400 via-55% to-offwhite to-100%"
     ></section>
 
     <section>
@@ -44,7 +44,7 @@
 
     <div class="pt-48"></div>
     <section
-        class="min-h-[30vh] bg-linear-to-b from-white from-20% via-pink-400 via-50% to-black to-100%"
+        class="min-h-[30vh] bg-linear-to-b from-offwhite from-20% via-pink-400 via-50% to-black to-100%"
     >
         <section class="snap-center h-auto"><Tiles /></section>
 

@@ -1,2 +1,7 @@
 @import 'tailwindcss';
 @plugin '@tailwindcss/typography';
+
+@theme{
+ --color-offwhite: #FFF8EE;
+
+}
