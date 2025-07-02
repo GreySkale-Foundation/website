@@ -40,7 +40,7 @@
             <About />
         </section>
 
-        <div class="pt-80"></div>
+        <div class="pt-20 sm:pt-80"></div>
 
         <section class="h-auto snap-center">
             <Events />
@@ -49,7 +49,7 @@
         <div class="pt-48"></div>
         <section class="snap-center h-auto"><Tiles /></section>
 
-        <div class="pt-80"></div>
+        <div class="pt-20 sm:pt-80"></div>
 
         <section class="snap-center h-auto">
             <div
@@ -61,17 +61,8 @@
             </div>
         </section>
 
-        <div class="pt-80"></div>
-        
-        <!-- <Text /> -->
-   
-  <section>
-  <!-- svelte-ignore component_name_lowercase -->
-  <mission></mission>
-</section>
 
-        
-        
+        <div class="pt-20 sm:pt-80"></div>
         <section class="relative snap-center z-10">
             <Card />
         </section>
