@@ -5,6 +5,7 @@
     import Events from "$lib/components/events.svelte";
     import Tiles from "$lib/components/tiles.svelte";
     import lockImage from "$lib/assets/Lock.svg";
+    import Mission from "$lib/components/mission.svelte";
 </script>
 
 <!-- class="min-h-48 w-full bg-linear-to-b from-black from-40% via-pink-400 via-50% to-white to-60%"> -->
@@ -59,6 +60,7 @@
                 <img src={lockImage} alt="Locked" class="w-6 h-6 ml-0.5" />
             </div>
         </section>
+
 
         <div class="pt-20 sm:pt-80"></div>
         <section class="relative snap-center z-10">
