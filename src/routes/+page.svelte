@@ -5,6 +5,7 @@
     import Events from "$lib/components/events.svelte";
     import Tiles from "$lib/components/tiles.svelte";
     import lockImage from "$lib/assets/Lock.svg";
+    import Mission from "$lib/components/mission.svelte";
 </script>
 
 <!-- class="min-h-48 w-full bg-linear-to-b from-black from-40% via-pink-400 via-50% to-white to-60%"> -->
@@ -61,6 +62,16 @@
         </section>
 
         <div class="pt-80"></div>
+        
+        <!-- <Text /> -->
+   
+  <section>
+  <!-- svelte-ignore component_name_lowercase -->
+  <mission></mission>
+</section>
+
+        
+        
         <section class="relative snap-center z-10">
             <Card />
         </section>
