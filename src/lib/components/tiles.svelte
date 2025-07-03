@@ -7,8 +7,8 @@
   };
 </script>
 
-<div class="w-full py-16">
-  <div class="max-w-6xl mx-auto px-4">
+<div class="w-full py-8 md:py-16">
+  <div class="max-w-6xl mx-auto px-4 md:px-6">
     <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-14">
       <div class="md:col-span-1 flex items-end">
         <h1 class="text-3xl font-bold text-black">Check us out!</h1>
@@ -23,13 +23,13 @@
     </div>
 
     <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+
       <!-- Podcasts Tile -->
       <a 
         href={playlistLinks.podcasts} 
         target="_blank"
         rel="noopener noreferrer"
-        class="group relative h-[400px] bg-white rounded-2xl shadow-md overflow-hidden border border-gray-200 transition-all duration-300 ease-in-out hover:-translate-y-2 hover:shadow-2xl cursor-pointer"
-      >
+        class="group relative h-auto md:h-[400px] bg-white rounded-2xl shadow-md overflow-hidden border border-gray-200 transition-all duration-300 ease-in-out hover:-translate-y-2 hover:shadow-2xl cursor-ponter">
         <div class="p-7 h-full flex flex-col">
           <!-- Title section with aligned indicator -->
           <div class="flex justify-between items-start mb-6">
