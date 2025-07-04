@@ -7,8 +7,8 @@
   };
 </script>
 
-<div class="w-full py-8 md:py-16">
-  <div class="max-w-6xl mx-auto px-4 md:px-6">
+<div class="w-full py-16">
+  <div class="max-w-6xl mx-auto px-4">
     <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-14">
       <div class="md:col-span-1 flex items-end">
         <h1 class="text-3xl font-bold text-black">Check us out!</h1>
@@ -23,16 +23,16 @@
     </div>
 
     <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-
       <!-- Podcasts Tile -->
       <a 
         href={playlistLinks.podcasts} 
         target="_blank"
         rel="noopener noreferrer"
-        class="group relative h-auto md:h-[400px] bg-white rounded-2xl shadow-md overflow-hidden border border-gray-200 transition-all duration-300 ease-in-out hover:-translate-y-2 hover:shadow-2xl cursor-ponter">
-        <div class="p-7 h-full flex flex-col">
+        class="group relative bg-white rounded-2xl shadow-md overflow-hidden border border-gray-200 transition-all duration-300 ease-in-out hover:-translate-y-2 hover:shadow-2xl cursor-pointer"
+      >
+        <div class="p-7 flex flex-col h-full">
           <!-- Title section with aligned indicator -->
-          <div class="flex justify-between items-start mb-6">
+          <div class="flex justify-between items-start mb-4">
             <h3
               class="text-2xl font-bold text-black pb-2 relative after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-[50px] after:h-[3px] after:bg-black group-hover:after:w-full after:transition-all after:duration-300"
             >
@@ -45,7 +45,13 @@
             </div>
           </div>
           
-          <div class="mt-auto pb-10">
+          <!-- Image container -->
+          <div class="w-full h-48 mb-6 bg-gray-100 border border-dashed border-gray-300 rounded-lg overflow-hidden flex items-center justify-center">
+            <!-- Add your image here -->
+            <span class="text-gray-400">Add Podcast Image</span>
+          </div>
+          
+          <div class="mt-auto">
             <p class="text-black leading-relaxed">
               We make podcasts every month featuring our members,
               get ready to unwind genuine curious questions!
@@ -66,11 +72,11 @@
         href={playlistLinks.tutorials} 
         target="_blank"
         rel="noopener noreferrer"
-        class="group relative h-[400px] bg-white rounded-2xl shadow-md overflow-hidden border border-gray-200 transition-all duration-300 ease-in-out hover:-translate-y-2 hover:shadow-2xl cursor-pointer"
+        class="group relative bg-white rounded-2xl shadow-md overflow-hidden border border-gray-200 transition-all duration-300 ease-in-out hover:-translate-y-2 hover:shadow-2xl cursor-pointer"
       >
-        <div class="p-7 h-full flex flex-col">
+        <div class="p-7 flex flex-col h-full">
           <!-- Title section with aligned indicator -->
-          <div class="flex justify-between items-start mb-6">
+          <div class="flex justify-between items-start mb-4">
             <h3
               class="text-2xl font-bold text-black pb-2 relative after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-[50px] after:h-[3px] after:bg-black group-hover:after:w-full after:transition-all after:duration-300"
             >
@@ -83,7 +89,13 @@
             </div>
           </div>
           
-          <div class="mt-auto pb-10">
+          <!-- Image container -->
+          <div class="w-full h-48 mb-6 bg-gray-100 border border-dashed border-gray-300 rounded-lg overflow-hidden flex items-center justify-center">
+            <!-- Add your image here -->
+            <span class="text-gray-400">Add Tutorial Image</span>
+          </div>
+          
+          <div class="mt-auto">
             <p class="text-black leading-relaxed">
               Coding, design and much more!
             </p>
@@ -103,15 +115,15 @@
         href={playlistLinks.vlogs} 
         target="_blank"
         rel="noopener noreferrer"
-        class="group relative h-[400px] bg-white rounded-2xl shadow-md overflow-hidden border border-gray-200 transition-all duration-300 ease-in-out hover:-translate-y-2 hover:shadow-2xl cursor-pointer"
+        class="group relative bg-white rounded-2xl shadow-md overflow-hidden border border-gray-200 transition-all duration-300 ease-in-out hover:-translate-y-2 hover:shadow-2xl cursor-pointer"
       >
-        <div class="p-7 h-full flex flex-col">
+        <div class="p-7 flex flex-col h-full">
           <!-- Title section with aligned indicator -->
-          <div class="flex justify-between items-start mb-6">
+          <div class="flex justify-between items-start mb-4">
             <h3
               class="text-2xl font-bold text-black pb-2 relative after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-[50px] after:h-[3px] after:bg-black group-hover:after:w-full after:transition-all after:duration-300"
             >
-              STORIES
+              VLOGS
             </h3>
             
             <!-- Click to watch indicator aligned with title -->
@@ -120,7 +132,15 @@
             </div>
           </div>
           
-          <div class="mt-auto pb-10">
+          <div class="w-full h-48 mb-6 bg-gray-100 border border-dashed border-gray-300 rounded-lg overflow-hidden">
+            <!-- Replace this with your image -->
+              <img 
+                src="D:\website\src\lib\assets\cars.jpg" 
+                alt="Vlogs" 
+                class="w-full h-full object-cover"/>
+          </div>
+          
+          <div class="mt-auto">
             <p class="text-black leading-relaxed">
               Travel with us, Explore and Experience.
             </p>
@@ -138,7 +158,7 @@
 
     <div class="mt-12 text-center">
       <p class="text-xl font-bold">
-        WATCH THESE IF YOU FIND THEM <span class="text-[#ac196f]">INTERESTING!!</span>
+        WATCH THESE IF YOU FIND THEM <span class="text-[#AE3579]">INTERESTING!!</span>
       </p>
     </div>
   </div>

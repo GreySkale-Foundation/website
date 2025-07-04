@@ -15,7 +15,7 @@
   on:mouseleave={() => (hovered = false)}
   on:focus={() => (hovered = true)}
   on:blur={() => (hovered = false)}
-  class="group relative flex items-center justify-center
+  class="group .relative flex items-center justify-center
          w-full max-w-[457px]      /* fluid up to 457px */
          h-auto sm:h-[371px]       /* auto height on xs, fixed on sm+ */
          rounded-2xl
