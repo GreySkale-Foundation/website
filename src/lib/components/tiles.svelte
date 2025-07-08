@@ -138,7 +138,7 @@
 
     <div class="mt-12 text-center">
       <p class="text-xl font-bold">
-        WATCH THESE IF YOU FIND THEM <span class="text-[#ac196f]">INTERESTING!!</span>
+        WATCH THESE IF YOU FIND THEM <span class="text-[#ffffff]">INTERESTING!!</span>
       </p>
     </div>
   </div>
