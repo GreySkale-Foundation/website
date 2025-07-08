@@ -1,13 +1,14 @@
 <script>
     import EventCard from "$lib/components/event_card.svelte";
     import Image from "$lib/assets/event/event.svg";
+    import Image1 from "$lib/assets/event/Weekly.jpg";
     import Image2 from '$lib/assets/event/event2.svg'
     import Newsletter from '$lib/assets/misc/june25.pdf';
     import {eventMaker} from "$lib/scripts/events"
     
     const monthlyEvent = eventMaker("Monthly",Image2,"Hello How are you")
     const majorEvent = eventMaker("MAIN EVENT", Image, "Very dope event")
-    const weeklyEvent = eventMaker("Weekly", Image2, "This is done by Chandra Rajesh")
+    const weeklyEvent = eventMaker("Weekly", Image1, "This is done by Chandra Rajesh")
 </script>
 
 <div class="flex h-full w-full items-center justify-center px-2 sm:px-4">
