@@ -1,2 +1,17 @@
+
+/* Font */
+
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Irish+Grover&display=swap');
+
+
 @import 'tailwindcss';
 @plugin '@tailwindcss/typography';
+
+@theme{
+  --color-offwhite: #FFF8EE;
+  --font-courier-prime : "Courier Prime", monospace;
+  --font-irish-grover : "Irish Grover", system-ui;
+
+
+}
