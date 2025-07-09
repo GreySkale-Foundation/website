@@ -1,46 +1,44 @@
 <script>
-  // Nothing fancy here yet—pure layout for now
+  import paperplane from '$lib/assets/paperplane.svg';
 </script>
 
-<style>
-  .container {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-    padding: 2rem;
-    background-color: #f7f7f7;
-    border-radius: 12px;
-  }
+<div class="w-full py-16">
+  <div class="max-w-6xl mx-auto px-4">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-10 text-black">
+      
+      <!-- Card 1 -->
+      <div class="flex items-start space-x-2">
+        <img src={paperplane} alt="Paper Plane Icon" class="w-5 h-5 mt-1" />
+        <div>
+          <p class="font-semibold">We build things</p>
+          <p class="font-normal text-sm mt-1">
+            Our 9 membered team is seeking to build solutions that matter and that can help others in the process.
+          </p>
+        </div>
+      </div>
 
-  .section {
-    background: white;
-    padding: 1.5rem;
-    border-radius: 8px;
-    box-shadow: 0 1px 6px rgba(0,0,0,0.1);
-  }
+      <!-- Card 2 -->
+      <div class="flex items-start space-x-2">
+        <img src={paperplane} alt="Paper Plane Icon" class="w-5 h-5 mt-1" />
+        <div>
+          <p class="font-semibold">We teach and help others</p>
+          <p class="font-normal text-sm mt-1">
+            Got weekly sessions, monthly learnings and third week weekly bashes with just one aim: learn and teach.
+          </p>
+        </div>
+      </div>
 
-  .section h2 {
-    margin-bottom: 0.5rem;
-    color: #333;
-  }
+      <!-- Card 3 -->
+      <div class="flex items-start space-x-2">
+        <img src={paperplane} alt="Paper Plane Icon" class="w-5 h-5 mt-1" />
+        <div>
+          <p class="font-semibold">We learn, consistently.</p>
+          <p class="font-normal text-sm mt-1">
+            Neural networks? Checked. CAD? Checked. Systems? Get in! We learn here. Always.
+          </p>
+        </div>
+      </div>
 
-  .section p {
-    color: #555;
-    line-height: 1.6;
-  }
-</style>
-
-<div class="container">
-  <div class="section">
-    <h2>We build things</h2>
-    <p>Our 9 membered team is seeking to build solutions that matter and that can help others in the process.</p>
-  </div>
-  <div class="section">
-    <h2>We teach and help others</h2>
-    <p>Got weekly sessions, monthly learnings and third week weekly bashes with just one aim—learn and teach.</p>
-  </div>
-  <div class="section">
-    <h2>We learn, consistently.</h2>
-    <p>Neural networks? Checked. CAD? Checked. Systems? Get in! We learn here. Always.</p>
+    </div>
   </div>
 </div>

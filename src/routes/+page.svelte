@@ -47,6 +47,12 @@
         </section>
 
         <div class="pt-48"></div>
+
+        <section>
+            <Mission />
+        </section>
+
+        <div class="pt-48"></div>
         <section class="snap-center h-auto"><Tiles /></section>
 
         <div class="pt-20 sm:pt-80"></div>
@@ -60,6 +66,7 @@
                 <img src={lockImage} alt="Locked" class="w-6 h-6 ml-0.5" />
             </div>
         </section>
+        
 
 
         <div class="pt-20 sm:pt-80"></div>
