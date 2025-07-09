@@ -1,46 +1,51 @@
+
 <script>
-  // Nothing fancy here yet—pure layout for now
+  
 </script>
 
-<style>
-  .container {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-    padding: 2rem;
-    background-color: #f7f7f7;
-    border-radius: 12px;
-  }
+<div class="w-full py-16 bg-[#FFF8EE]">
+  <div class="max-w-6xl mx-auto px-4">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-black">
+      
+      <!-- Card 1 -->
+      <div class="flex items-start space-x-3">
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10l11-6.5a1 1 0 011.5.87v14.26a1 1 0 01-1.5.87L3 13a1 1 0 010-1.74z" />
+        </svg>
+        <div>
+          <p class="font-semibold">We build things</p>
+          <p class="text-sm mt-1">
+            Our 9 membered team is seeking to build solutions that matter and that can help others in the process.
+          </p>
+        </div>
+      </div>
 
-  .section {
-    background: white;
-    padding: 1.5rem;
-    border-radius: 8px;
-    box-shadow: 0 1px 6px rgba(0,0,0,0.1);
-  }
+      <!-- Card 2 -->
+      <div class="flex items-start space-x-3">
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10l11-6.5a1 1 0 011.5.87v14.26a1 1 0 01-1.5.87L3 13a1 1 0 010-1.74z" />
+        </svg>
+        <div>
+          <p class="font-semibold">We teach and help others</p>
+          <p class="text-sm mt-1">
+            Got weekly sessions, monthly learnings and third week weekly bashes with just one aim: learn and teach.
+          </p>
+        </div>
+      </div>
 
-  .section h2 {
-    margin-bottom: 0.5rem;
-    color: #333;
-  }
+      <!-- Card 3 -->
+      <div class="flex items-start space-x-3">
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10l11-6.5a1 1 0 011.5.87v14.26a1 1 0 01-1.5.87L3 13a1 1 0 010-1.74z" />
+        </svg>
+        <div>
+          <p class="font-semibold">We learn, consistently.</p>
+          <p class="text-sm mt-1">
+            Neural networks? Checked. CAD? Checked. Systems? Get in! We learn here. Always.
+          </p>
+        </div>
+      </div>
 
-  .section p {
-    color: #555;
-    line-height: 1.6;
-  }
-</style>
-
-<div class="container">
-  <div class="section">
-    <h2>We build things</h2>
-    <p>Our 9 membered team is seeking to build solutions that matter and that can help others in the process.</p>
-  </div>
-  <div class="section">
-    <h2>We teach and help others</h2>
-    <p>Got weekly sessions, monthly learnings and third week weekly bashes with just one aim—learn and teach.</p>
-  </div>
-  <div class="section">
-    <h2>We learn, consistently.</h2>
-    <p>Neural networks? Checked. CAD? Checked. Systems? Get in! We learn here. Always.</p>
+    </div>
   </div>
 </div>

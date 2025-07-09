@@ -16,10 +16,10 @@
   on:focus={() => (hovered = true)}
   on:blur={() => (hovered = false)}
   class="group relative flex items-center justify-center
-         w-full max-w-[457px]      /* fluid up to 457px */
-         h-auto sm:h-[371px]       /* auto height on xs, fixed on sm+ */
+         w-full max-w-[457px]     
+         h-auto sm:h-[371px]      
          rounded-2xl
-         mx-auto px-4              /* avoid edge‑bleed on mobile */
+         mx-auto px-4              
          transition-all duration-[480ms] ease-[cubic-bezier(0.23,1,0.32,1)]
          outline-none"
 >
