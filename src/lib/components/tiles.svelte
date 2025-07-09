@@ -271,8 +271,8 @@
 
     <!-- Footer -->
     <div class="mt-12 text-center">
-      <p class="text-xl font-bold">
-        WATCH THESE IF YOU FIND THEM <span class="text-red-500">INTERESTING!!</span>
+      <p class="text-xl font-bold text-white">
+        WATCH THESE IF YOU FIND THEM <span class="text-red-400">INTERESTING!!</span>
       </p>
     </div>
   </div>
