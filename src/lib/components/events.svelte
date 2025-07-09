@@ -57,7 +57,7 @@
                 </div>
             </div>
             <div class="relative h-[80px] shadow-md flex items-center justify-center bg-white border border-black font-courier-prime font-bold rounded-lg text-xl ">
-                <div class="text-black font-bold text-sm">Meet the Peeps</div>
+                <a href="/products"><div class="text-black font-bold text-sm">Our Products</div> </a>
             </div>
         </div>
     </div>

@@ -4,7 +4,6 @@
     import Card from "$lib/components/card.svelte";
     import Events from "$lib/components/events.svelte";
     import Tiles from "$lib/components/tiles.svelte";
-    import lockImage from "$lib/assets/Lock.svg";
     import Mission from "$lib/components/mission.svelte";
     import {scrollReveal} from '$lib/scripts/lazyScroll'
 </script>
@@ -55,20 +54,6 @@
 
         <div class="pt-48"></div>
         <section class="snap-center h-auto"  use:scrollReveal><Tiles /></section>
-
-        <div class="pt-20 sm:pt-80"></div>
-
-        <section class="snap-center h-auto"  use:scrollReveal>
-            <div
-                class="w-[440px] h-44 bg-white mx-auto rounded-lg flex items-center justify-center text-center"
-            >
-                <h1 class="text-gray-400 font-bold text-3xl">PRODUCTS</h1>
-                <h3 class="absolute mt-24">Yet to be unlocked.</h3>
-                <img src={lockImage} alt="Locked" class="w-6 h-6 ml-0.5" />
-            </div>
-        </section>
-        
-
 
         <div class="pt-20 sm:pt-80"></div>
         <section class="relative snap-center z-10"  use:scrollReveal>
