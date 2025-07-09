@@ -4,8 +4,8 @@
     import Card from "$lib/components/card.svelte";
     import Events from "$lib/components/events.svelte";
     import Tiles from "$lib/components/tiles.svelte";
-    import lockImage from "$lib/assets/Lock.svg";
     import Mission from "$lib/components/mission.svelte";
+    import {scrollReveal} from '$lib/scripts/lazyScroll'
 </script>
 
 <!-- class="min-h-48 w-full bg-linear-to-b from-black from-40% via-pink-400 via-50% to-white to-60%"> -->
@@ -34,46 +34,32 @@
         class="min-h-[50vh] bg-linear-to-b from-black from-30% via-pink-400 via-55% to-offwhite to-100%"
     ></section>
     <section
-        class="min-h-[30vh] bg-linear-to-b from-offwhite from-20% via-pink-400 via-50% to-black to-100%"
+        class="min-h-[30vh] bg-linear-to-b from-offwhite from-20% via-pink-400 via-75% to-black to-100%"
     >
-        <section>
+        <section use:scrollReveal>
             <About />
         </section>
 
         <div class="pt-20 sm:pt-80"></div>
 
-        <section class="h-auto snap-center">
+        <section class="h-auto snap-center" use:scrollReveal>
             <Events />
         </section>
 
         <div class="pt-48"></div>
 
-        <section>
+        <section  use:scrollReveal>
             <Mission />
         </section>
 
         <div class="pt-48"></div>
-        <section class="snap-center h-auto"><Tiles /></section>
+        <section class="snap-center h-auto"  use:scrollReveal><Tiles /></section>
 
         <div class="pt-20 sm:pt-80"></div>
-
-        <section class="snap-center h-auto">
-            <div
-                class="w-[440px] h-44 bg-white mx-auto rounded-lg flex items-center justify-center text-center"
-            >
-                <h1 class="text-gray-400 font-bold text-3xl">PRODUCTS</h1>
-                <h3 class="absolute mt-24">Yet to be unlocked.</h3>
-                <img src={lockImage} alt="Locked" class="w-6 h-6 ml-0.5" />
-            </div>
-        </section>
-        
-
-
-        <div class="pt-20 sm:pt-80"></div>
-        <section class="relative snap-center z-10">
+        <section class="relative snap-center z-10"  use:scrollReveal>
             <Card />
         </section>
-        <section>
+        <section  use:scrollReveal>
             <footer
                 class="flex justify-between items-center px-8 py-4 text-sm text-white font-bold"
             >
