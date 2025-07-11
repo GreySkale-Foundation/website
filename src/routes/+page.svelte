@@ -81,8 +81,8 @@
 
 <section use:scrollReveal>
     <footer class="px-8 py-4 text-sm text-white font-bold relative overflow-x-hidden min-h-0">
-        <!-- Desktop layout -->
-        <div class="hidden sm:flex justify-between items-end">
+        <!-- Desktop layout with top padding for card expansion -->
+        <div class="hidden sm:flex justify-between items-end pt-20">
             <!-- Left text -->
             <div class="flex-1">
                 <p class="ml-8 mb-2">Made by greyskale</p>
@@ -98,23 +98,22 @@
                 <p class="mr-8 mb-2">Made with <b class="text-lg">❤</b></p>
             </div>
         </div>
-
+        
         <!-- Mobile layout -->
-        <!-- Mobile layout -->
-<div class="sm:hidden flex flex-col items-center space-y-4">
-    <!-- Card with scaling and extra padding -->
-    <div class="w-full flex justify-center pt-20">
-        <div class="scale-80 origin-center"> <!-- Scale down to 75% -->
-            <Card />
+        <div class="sm:hidden flex flex-col items-center space-y-4">
+            <!-- Card with scaling and extra padding -->
+            <div class="w-full flex justify-center pt-20">
+                <div class="scale-80 origin-center">
+                    <Card />
+                </div>
+            </div>
+            
+            <!-- Footer text -->
+            <div class="flex justify-between w-full px-4 text-xs">
+                <p>Made by greyskale</p>
+                <p>Made with <b class="text-lg">❤</b></p>
+            </div>
         </div>
-    </div>
-    
-    <!-- Footer text -->
-    <div class="flex justify-between w-full px-4 text-xs">
-        <p>Made by greyskale</p>
-        <p>Made with <b class="text-lg">❤</b></p>
-    </div>
-</div>
     </footer>
 </section>
     </section>
