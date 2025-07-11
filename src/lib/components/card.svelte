@@ -5,16 +5,24 @@
     import GitImage from "$lib/assets/gitwhite.svg";
     import YoutubeImage from "$lib/assets/youtubewhite.svg";
     import MailImage from "$lib/assets/Mail.svg";
+    function handleMouseEnter() {
+        hovered = true;
+        document.body.style.overflow = 'hidden'
+    }
+function handleMouseLeave() {
+        hovered = false;
+        document.body.style.overflow = 'auto'
+    }
 </script>
 
 <!-- Wrapper -->
 <div
   role="button"
   tabindex="0"
-  on:mouseenter={() => (hovered = true)}
-  on:mouseleave={() => (hovered = false)}
-  on:focus={() => (hovered = true)}
-  on:blur={() => (hovered = false)}
+  on:mouseenter={handleMouseEnter}
+  on:mouseleave={handleMouseLeave}
+  on:focus={handleMouseEnter}
+  on:blur={handleMouseLeave}
   class="group relative flex items-center justify-center
          w-full max-w-[457px]     
          h-auto sm:h-[371px]      

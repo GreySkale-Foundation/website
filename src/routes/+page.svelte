@@ -80,7 +80,7 @@
         <!--         </section> -->
 
 <section use:scrollReveal>
-    <footer class="px-8 py-4 text-sm text-white font-bold relative overflow-x-hidden min-h-0">
+    <footer class="px-8 py-4 text-sm text-white font-bold relative overflow-x-hidden overflow-y-hidden min-h-0">
         <!-- Desktop layout with top padding for card expansion -->
         <div class="hidden sm:flex justify-between items-end pt-20">
             <!-- Left text -->
