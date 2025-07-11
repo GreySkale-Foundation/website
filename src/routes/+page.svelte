@@ -56,7 +56,7 @@
         <section class="snap-center h-auto"  use:scrollReveal><Tiles /></section>
 
         <div class="pt-20 sm:pt-80"></div>
-        <section class="relative snap-center z-10"  use:scrollReveal>
+        <section class="relative snap-center z-10 overflow-hidden"  use:scrollReveal>
             <Card />
         </section>
         <section  use:scrollReveal>
