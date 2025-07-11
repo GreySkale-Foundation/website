@@ -21,7 +21,7 @@
          rounded-2xl
          mx-auto px-4              
          transition-all duration-[480ms] ease-[cubic-bezier(0.23,1,0.32,1)]
-         outline-none"
+         outline-none text-black"
 >
   <!-- Front shadow layer -->
   <div
