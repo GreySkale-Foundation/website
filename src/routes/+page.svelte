@@ -5,7 +5,7 @@
     import Events from "$lib/components/events.svelte";
     import Tiles from "$lib/components/tiles.svelte";
     import Mission from "$lib/components/mission.svelte";
-    import {scrollReveal} from '$lib/scripts/lazyScroll'
+    import { scrollReveal } from "$lib/scripts/lazyScroll";
 </script>
 
 <!-- class="min-h-48 w-full bg-linear-to-b from-black from-40% via-pink-400 via-50% to-white to-60%"> -->
@@ -48,25 +48,52 @@
 
         <div class="pt-48"></div>
 
-        <section  use:scrollReveal>
+        <section use:scrollReveal>
             <Mission />
         </section>
 
         <div class="pt-48"></div>
-        <section class="snap-center h-auto"  use:scrollReveal><Tiles /></section>
+        <section class="snap-center h-auto" use:scrollReveal><Tiles /></section>
 
         <div class="pt-20 sm:pt-80"></div>
-        <section class="relative snap-center z-10 overflow-hidden"  use:scrollReveal>
-            <Card />
-        </section>
-        <section  use:scrollReveal>
-            <footer
-                class="flex justify-between items-center px-8 py-4 text-sm text-white font-bold"
-            >
-                <p class="ml-8 mb-2">Made by greyskale</p>
-                <!-- moved slightly right -->
-                <p class="mr-8 mb-2">Made with <b class="text-lg">❤</b></p>
-                <!-- moved slightly left -->
+        <!-- <section -->
+        <!--     class="relative snap-center z-10 overflow-hidden" -->
+        <!--     use:scrollReveal -->
+        <!-- > -->
+        <!--     <div class="overflow-hidden"> -->
+        <!--         <Card /> -->
+        <!--     </div> -->
+        <!-- </section> -->
+        <!--         <section use:scrollReveal> -->
+        <!--             <footer class=" flex justify-between items-end relative px-8 py-4 text-sm text-white font-bold"> -->
+        <!--                 <div class="flex items-end"> -->
+        <!--                     <p class="ml-8 mb-2">Made by greyskale</p> -->
+        <!--                     <!-- moved slightly right --> 
+        <!-- <div class="flex justify-center overflow-hidden"> -->
+        <!--                     <Card /> -->
+        <!--                 </div> -->
+        <!--                     <!-- moved slightly left --> 
+        <!--                 </div> -->
+
+        <!--                     <p class="mr-8 mb-2">Made with <b class="text-lg">❤</b></p> -->
+        <!--             </footer> -->
+        <!--         </section> -->
+
+        <section use:scrollReveal>
+            <footer class="px-8 py-4 text-sm text-white font-bold relative">
+                <div class="flex justify-between items-end">
+                    <div class="flex-1">
+                        <p class="ml-8 mb-2">Made by greyskale</p>
+                    </div>
+                    <div class="flex-1 flex justify-center ">
+                        <Card />
+                    </div>
+                    <div class="flex-1 flex justify-end">
+                        <p class="mr-8 mb-2">
+                            Made with <b class="text-lg">❤</b>
+                        </p>
+                    </div>
+                </div>
             </footer>
         </section>
     </section>
