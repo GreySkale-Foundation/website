@@ -4,6 +4,7 @@
     import Video2 from "$lib/assets/misc/video2.mp4";
     import Video3 from "$lib/assets/misc/video3.mp4";
     import playImage from "$lib/assets/Play.svg";
+    import { preventDefault } from "svelte/legacy";
     let video1, video2, video3;
     let videoStates = {
         video1: { playing: false, touched: false },
@@ -94,8 +95,10 @@
                 class="group relative h-[400px] bg-white rounded-2xl shadow-md overflow-hidden border border-gray-200 transition-all duration-300 ease-in-out hover:-translate-y-2 hover:shadow-2xl cursor-pointer"
                 on:mouseenter={() => handleHover(video1, "enter", "video1")}
                 on:mouseleave={() => handleHover(video1, "leave", "video1")}
-                on:click|preventDefault={(e) =>
-                    isMobile && handleMobileTouch(video1, "video1", e)}
+                on:click={(e) =>{
+                    if(isMobile){
+                        handleMobileTouch(video1, "video1", e)
+                    }}}
             >
                 <video
                     bind:this={video1}
@@ -152,8 +155,12 @@
                 class="group relative h-[400px] bg-white rounded-2xl shadow-md overflow-hidden border border-gray-200 transition-all duration-300 ease-in-out hover:-translate-y-2 hover:shadow-2xl cursor-pointer"
                 on:mouseenter={() => handleHover(video2, "enter", "video2")}
                 on:mouseleave={() => handleHover(video2, "leave", "video2")}
-                on:click|preventDefault={(e) =>
-                    isMobile && handleMobileTouch(video2, "video2", e)}
+                on:click={(e) => {
+                    if(isMobile){
+                        e.preventDefault()
+                        handleMobileTouch(video2, "video2", e)
+                    }
+                }}
             >
                 <video
                     bind:this={video2}
@@ -209,8 +216,11 @@
                 class="group relative h-[400px] bg-white rounded-2xl shadow-md overflow-hidden border border-gray-200 transition-all duration-300 ease-in-out hover:-translate-y-2 hover:shadow-2xl cursor-pointer"
                 on:mouseenter={() => handleHover(video3, "enter", "video3")}
                 on:mouseleave={() => handleHover(video3, "leave", "video3")}
-                on:click|preventDefault={(e) =>
-                    isMobile && handleMobileTouch(video3, "video3", e)}
+                on:click={(e) =>{
+                    if(isMobile){
+                        e.preventDefault()
+                        handleMobileTouch(video3, "video3", e)}
+                    }}
             >
                 <video
                     bind:this={video3}
