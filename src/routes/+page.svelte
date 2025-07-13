@@ -68,11 +68,11 @@
         <!--             <footer class=" flex justify-between items-end relative px-8 py-4 text-sm text-white font-bold"> -->
         <!--                 <div class="flex items-end"> -->
         <!--                     <p class="ml-8 mb-2">Made by greyskale</p> -->
-        <!--                     <!-- moved slightly right --> 
+        <!--                    moved slightly right --> 
         <!-- <div class="flex justify-center overflow-hidden"> -->
         <!--                     <Card /> -->
         <!--                 </div> -->
-        <!--                     <!-- moved slightly left --> 
+        <!--                      moved slightly left --> 
         <!--                 </div> -->
 
         <!--                     <p class="mr-8 mb-2">Made with <b class="text-lg">❤</b></p> -->
@@ -80,7 +80,7 @@
         <!--         </section> -->
 
 <section use:scrollReveal>
-    <footer class="px-8 py-4 text-sm text-white font-bold relative overflow-x-hidden overflow-y-hidden min-h-0">
+    <footer class="px-8 py-4 text-sm text-white font-bold pointer-events-auto relative overflow-x-hidden overflow-y-hidden min-h-0">
         <!-- Desktop layout with top padding for card expansion -->
         <div class="hidden sm:flex justify-between items-end pt-20">
             <!-- Left text -->
@@ -89,7 +89,7 @@
             </div>
             
             <!-- Center card -->
-            <div class="flex-1 flex justify-center">
+            <div class="flex-1 flex text-black justify-center">
                 <Card />
             </div>
             
@@ -108,10 +108,10 @@
                 </div>
             </div>
             
-            <!-- Footer text -->
-            <div class="flex justify-between w-full px-4 text-xs">
+            <!-- Footer text with proper alignment -->
+            <div class="flex justify-between items-baseline w-full px-4 text-xs">
                 <p>Made by greyskale</p>
-                <p>Made with <b class="text-lg">❤</b></p>
+                <p class="flex items-baseline">Made with <b class="text-sm ml-1">❤</b></p>
             </div>
         </div>
     </footer>
