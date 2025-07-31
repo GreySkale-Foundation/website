@@ -6,6 +6,31 @@
     import Tiles from "$lib/components/tiles.svelte";
     import Mission from "$lib/components/mission.svelte";
     import { scrollReveal } from "$lib/scripts/lazyScroll";
+    import { onMount } from "svelte";
+    import {fade} from 'svelte/transition'
+    import { browser } from "$app/environment";
+    
+    const arrowDelayTime = 4000; //in millisec
+
+    let showArrow = false;
+    let hasScrolled = false;
+    onMount(() => {
+        if (!browser) return
+        const OnScroll = () => {
+            hasScrolled = true;
+            showArrow = false;
+            window.removeEventListener("scroll", OnScroll)
+        }
+        const timer = setTimeout(() => {
+            if (!hasScrolled) showArrow = true;
+        }, arrowDelayTime); //Change accordingly
+        window.addEventListener("scroll", OnScroll);
+
+        return () => {
+            clearTimeout(timer);
+            window.removeEventListener("scroll",OnScroll)
+        }
+    })
 </script>
 
 <div class="bg-offwhite">
@@ -22,6 +47,11 @@
                 Be who you ought to be.
             </div>
         </div>
+
+        {#if showArrow}
+            <div in:fade out:fade class="absolute bottom-10 text-white text-3xl left-1/2 transform -translate-x-1/2 animate-bounce">↓</div>
+            
+        {/if} 
     </section>
 
     <section
