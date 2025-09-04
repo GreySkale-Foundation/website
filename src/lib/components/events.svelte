@@ -3,7 +3,7 @@
     import Image from "$lib/assets/event/event.svg";
     import Image1 from "$lib/assets/event/Weekly.jpg";
     import Image2 from "$lib/assets/event/event2.svg";
-    import Major_event from "$lib/assets/event/Ppu.jpeg";
+    import Major_event from "$lib/assets/event/bigevent.jpg";
     import Newsletter from "$lib/assets/misc/june25.pdf";
     import { eventMaker } from "$lib/scripts/events";
 
