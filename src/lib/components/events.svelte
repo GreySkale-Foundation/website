@@ -25,7 +25,7 @@
         >
             <a
                 href={Newsletter}
-                download="June 2025"
+                download="August 2025"
                 class="font-courier-prime font-bold text-center text-sm px-2"
             >
                 Download our monthly newsletter
