@@ -4,7 +4,7 @@
     import Image1 from "$lib/assets/event/Weekly.jpg";
     import Image2 from "$lib/assets/event/event2.svg";
     import Major_event from "$lib/assets/event/bigevent.jpg";
-    import Newsletter from "$lib/assets/misc/june25.pdf";
+    import Newsletter from "$lib/assets/misc/aug25.pdf";
     import { eventMaker } from "$lib/scripts/events";
 
     const monthlyEvent = eventMaker("Monthly", Image2, "Our Montly Event");
