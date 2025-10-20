@@ -36,26 +36,39 @@
   import sunny from "$lib/assets/products/sunny.png";
 
   let menuOpen = false;
-  const instagramId = "greyskalerobotics"; // 🔴 change this to your IG username
+  let selectedSticker = null;
+  let showAlt = false;
+
+  // optional alt images (if you have them)
+ // import froggoAlt from "$lib/assets/products/froggo_alt.png";
+ // import happyBuddyAlt from "$lib/assets/products/happybuddy_alt.png";
 
   const stickers = [
-    { title: "Happy buddy", desc: "A+ for effort!", img: happyBuddy },
-    { title: "Froggoo", desc: "Im not afraid to be seen trying", img: froggo },
-    { title: "Flowers and Milo the cat", desc: "Look around! Flowers Everywhere!", img: milo },
-    { title: "Lily and the musical box ", desc: "Bloom in your own pace", img: lily },
-    { title: "Sunshine", desc: "good things are coming", img: sunny }
+    { title: "Happy buddy", desc: "A+ for effort!", img: happyBuddy, price: "15/-", altprice: "12/- only!" },
+    { title: "Froggoo", desc: "I’m not afraid to be seen trying", img: froggo, price: "15/-" , altprice: "12/- only!"},
+    { title: "Flowers and Milo the cat", desc: "Look around! Flowers Everywhere!", img: milo, price: "15/-",   altprice: "12/- only!" },
+    { title: "Lily and the musical box", desc: "Bloom in your own pace", img: lily, price: "15/-", altprice: "12/- only!" },
+    { title: "Sunshine", desc: "Good things are coming", img: sunny, price: "15/-",  altprice: "12/- only!" }
   ];
 
+  const instagramHandle = "greyskalerobotics"; 
+
+  function openModal(sticker) {
+    selectedSticker = sticker;
+    showAlt = false;
+  }
+
+  function closeModal() {
+    selectedSticker = null;
+  }
+
   function orderNow(sticker) {
-    const defaultMsg = `Hello 👋 I want to buy the "${sticker.title}" sticker!`;
-    navigator.clipboard.writeText(defaultMsg).then(() => {
-      alert("📋 Message copied! Paste it in Instagram DM.");
-      window.open(`https://ig.me/m/${instagramId}`, "_blank");
-    });
+    const message = encodeURIComponent(`Hey 👋 I’d like to order the "${sticker.title}" sticker!`);
+    window.open(`https://ig.me/${instagramHandle}/?message=${message}`, "_blank");
   }
 </script>
 
-<div class="min-h-screen bg-black text-white font-sans">
+<div class="min-h-screen bg-black text-white font-sans relative">
   <!-- Navbar -->
   <nav class="absolute top-0 left-0 w-full flex items-center justify-between px-6 md:px-8 py-4 z-20">
     <img src={GSKLogo} alt="greyskale" class="h-6 sm:h-8 md:h-10 w-auto" />
@@ -79,7 +92,7 @@
 
   <!-- Mobile Menu Dropdown -->
   {#if menuOpen}
-    <div class="absolute top-16 left-0 w-full bg-black/30 backdrop-blur-2xl text-white flex flex-col items-center gap-6 py-6 md:hidden z-10">
+    <div class="absolute top-16 left-0 w-full bg-black/50 backdrop-blur-2xl text-white flex flex-col items-center gap-6 py-6 md:hidden z-10">
       <a href="#" class="hover:underline" on:click={() => menuOpen = false}>Stickers</a>
       <a href="#" class="hover:underline" on:click={() => menuOpen = false}>Explore</a>
       <a href="#" class="hover:underline" on:click={() => menuOpen = false}>Contact us</a>
@@ -97,30 +110,27 @@
         The FeelGood Stickers!
       </h2>
       <p class="text-base sm:text-lg leading-relaxed px-2 sm:px-0">
-        The FeelGood Stickers are hand painted–crafted with love stickers which 
-        will make you feel special everytime you look at them. They are a true 
-        gift to yourself or your loved ones and with its watercolor features, 
-        your pc will look so adorable and fun.
+        The FeelGood Stickers are hand-painted and crafted with love — little artworks 
+        that’ll make you smile every time you see them.
       </p>
     </div>
   </section>
 
-  <!-- Cards -->
+  <!-- Product cards -->
   <section class="px-4 sm:px-6 py-10">
     <div class="flex md:grid md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6 overflow-x-auto md:overflow-visible pb-4">
       {#each stickers as s}
-        <div class="flex-shrink-0 w-56 sm:w-64 bg-white text-black rounded-2xl shadow-lg p-4">
+        <div
+          on:click={() => openModal(s)}
+          class="flex-shrink-0 w-56 sm:w-64 bg-white text-black rounded-2xl shadow-lg p-4 cursor-pointer hover:scale-[1.02] transition"
+        >
           <img src={s.img} alt={s.title} class="w-full h-32 sm:h-40 object-contain mb-3" />
           <h3 class="font-bold text-base sm:text-lg">{s.title}</h3>
           <p class="text-xs sm:text-sm text-gray-700 mb-3">{s.desc}</p>
-
-          <!-- ✅ Instagram button -->
-          <button
-            on:click={() => window.open(`https://ig.me/m/YOUR_INSTAGRAM_USERNAME`, "_blank")}
-           class="bg-black text-white px-3 py-2 sm:px-4 sm:py-2 rounded-lg w-full hover:bg-gray-800 text-sm sm:text-base"
->
-  Get now
-</button>
+          <div class="flex justify-start gap-6">
+            <p class="text-sm font-semibold line-through">{s.price}</p>
+          <p class="text-sm font-semibold">{s.altprice}</p>
+          </div>
 
         </div>
       {/each}
@@ -128,14 +138,47 @@
   </section>
 
   <!-- Footer -->
-<footer class="bg-black text-white text-center py-8 border-t border-gray-800 mt-10">
-  <h3 class="text-lg font-semibold mb-2">Greyskale</h3>
-  <p class="text-sm text-gray-400">
-  heyy <a href="https://instagram.com/greyskalerobotics" target="_blank" class="underline hover:text-white">tag us</a> when your stickers arrive 😎
-</p>
-  <p class="text-xs text-gray-500 mt-3">
-    © {new Date().getFullYear()} Greyskale. all rights reserved.
-  </p>
-</footer>
-
+  <footer class="text-center py-8 text-gray-400 text-sm border-t border-gray-800">
+    <p>© {new Date().getFullYear()} Greyskale. tag us if your laptop looks cute!! 🖤</p>
+  </footer>
 </div>
+
+<!-- Modal -->
+{#if selectedSticker}
+  <div class="fixed inset-0 bg-black/70 backdrop-blur-sm flex items-center justify-center z-50">
+    <div class="bg-white text-black rounded-2xl shadow-2xl w-11/12 sm:w-[400px] p-6 relative animate-fadeIn">
+      <button on:click={closeModal} class="absolute top-2 right-3 text-2xl text-gray-500 hover:text-black">✕</button>
+
+      <div class="flex flex-col items-center">
+        <img
+          src={showAlt && selectedSticker.alt ? selectedSticker.alt : selectedSticker.img}
+          alt={selectedSticker.title}
+          class="w-48 h-48 object-contain mb-3 rounded-lg transition"
+          on:click={() => (showAlt = !showAlt)}
+        />
+        {#if selectedSticker.alt}
+          <p class="text-xs text-gray-500 mb-2">(tap image to view another)</p>
+        {/if}
+        <h2 class="font-bold text-xl mb-2">{selectedSticker.title}</h2>
+        <p class="text-gray-700 text-sm mb-2">{selectedSticker.desc}</p>
+        <p class="font-semibold text-lg mb-4">{selectedSticker.altprice}</p>
+        <button
+          on:click={() => orderNow(selectedSticker)}
+          class="bg-black text-white px-4 py-2 rounded-lg hover:bg-gray-800 transition w-full"
+        >
+          Get now
+        </button>
+      </div>
+    </div>
+  </div>
+{/if}
+
+<style>
+  @keyframes fadeIn {
+    from { opacity: 0; transform: scale(0.95); }
+    to { opacity: 1; transform: scale(1); }
+  }
+  .animate-fadeIn {
+    animation: fadeIn 0.2s ease-out;
+  }
+</style>
