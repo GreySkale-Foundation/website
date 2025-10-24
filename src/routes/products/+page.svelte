@@ -29,11 +29,11 @@
 <script>
   import bg from "$lib/assets/products/bg.jpg";
   import GSKLogo from "$lib/assets/gsklogo.svg";
-  import froggo from "$lib/assets/products/froggo.png";
-  import happyBuddy from "$lib/assets/products/happybuddy.png";
-  import milo from "$lib/assets/products/milo.png";
-  import lily from "$lib/assets/products/lily.png";
-  import sunny from "$lib/assets/products/sunny.png";
+  import froggo from "$lib/assets/products/froggo.svg";
+  import happyBuddy from "$lib/assets/products/happybuddy.svg";
+  import milo from "$lib/assets/products/milo.svg";
+  import lily from "$lib/assets/products/lily.svg";
+  import sunny from "$lib/assets/products/sunshine.svg";
 
   let menuOpen = false;
   let selectedSticker = null;
@@ -64,7 +64,7 @@
 
   function orderNow(sticker) {
     const message = encodeURIComponent(`Hey 👋 I’d like to order the "${sticker.title}" sticker!`);
-    window.open(`https://ig.me/${instagramHandle}/?message=${message}`, "_blank");
+    window.open(`https://www.instagram.com/${instagramHandle}`, "_blank");
   }
 </script>
 
