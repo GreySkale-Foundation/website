@@ -1,9 +1,9 @@
 
-  import froggo from "$lib/assets/products/froggo.png";
-  import happyBuddy from "$lib/assets/products/happybuddy.png";
-  import milo from "$lib/assets/products/milo.png";
-  import lily from "$lib/assets/products/lily.png";
-  import sunny from "$lib/assets/products/sunny.png";
+  import froggo from "$lib/assets/products/froggo.svg";
+  import happyBuddy from "$lib/assets/products/happy buddy.svg";
+  import milo from "$lib/assets/products/milo.svg";
+  import lily from "$lib/assets/products/lilly.svg";
+  import sunny from "$lib/assets/products/sunshine.svg";
   
 
  
