@@ -15,7 +15,7 @@
 <button
   onclick={showPopup}
   tabindex="0"
-  class="flex-shrink-0 w-56 sm:w-64 bg-white text-black rounded-2xl shadow-lg p-4 cursor-pointer hover:scale-[1.02] transition"
+  class="flex-shrink-0  sm:h-[120%]  bg-white text-black rounded-2xl shadow-lg p-4 cursor-pointer hover:scale-[1.02] transition"
 >
   <img
     src={sticker.img}
@@ -46,7 +46,7 @@
         <img
           src={sticker.img}
           alt={sticker.title}
-          class="w-48 h-48 sm:h-42 sm:w-42 object-contain mb-3 rounded-lg transition"
+          class="w-auto h-48 sm:h-42 sm:w-auto object-contain mb-3 rounded-lg transition"
         />
         <h3 class="font-bold text-lg mb-2">{sticker.title}</h3>
         <p class="text-sm text-gray-700 mb-2">{sticker.desc}</p>

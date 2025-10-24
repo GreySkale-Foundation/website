@@ -44,7 +44,7 @@
 
     <!-- Mobile Hamburger -->
     <button
-      class="md:hidden text-3xl focus:outline-none"
+      class="md:hidden  cursor-pointer text-3xl focus:outline-none"
       aria-controls="mobile-menu"
       aria-expanded={menuOpen}
       onclick={() => (menuOpen = !menuOpen)}
@@ -100,7 +100,7 @@
   <!-- Product cards -->
   <section id="sticker" class="px-4 sm:px-6 py-10">
     <div
-      class="flex md:grid md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6 overflow-x-auto md:overflow-visible pb-4"
+      class="flex md:grid md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6 sm:gap-4 overflow-x-auto md:overflow-visible pb-4"
     >
       {#each stickers as s}
         <StickerCard sticker={s} />
