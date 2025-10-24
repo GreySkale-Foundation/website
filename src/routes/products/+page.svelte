@@ -30,9 +30,9 @@
   import bg from "$lib/assets/products/bg.jpg";
   import GSKLogo from "$lib/assets/gsklogo.svg";
   import froggo from "$lib/assets/products/froggo.svg";
-  import happyBuddy from "$lib/assets/products/happybuddy.svg";
+  import happyBuddy from "$lib/assets/products/happy buddy.svg";
   import milo from "$lib/assets/products/milo.svg";
-  import lily from "$lib/assets/products/lily.svg";
+  import lily from "$lib/assets/products/lilly.svg";
   import sunny from "$lib/assets/products/sunshine.svg";
 
   let menuOpen = false;
@@ -117,23 +117,29 @@
   </section>
 
   <!-- Product cards -->
-  <section class="px-4 sm:px-6 py-10">
+  <section class="px-10 sm:px-6 py-10">
     <div class="flex md:grid md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6 overflow-x-auto md:overflow-visible pb-4">
-      {#each stickers as s}
-        <div
-          on:click={() => openModal(s)}
-          class="flex-shrink-0 w-56 sm:w-64 bg-white text-black rounded-2xl shadow-lg p-4 cursor-pointer hover:scale-[1.02] transition"
-        >
-          <img src={s.img} alt={s.title} class="w-full h-32 sm:h-40 object-contain mb-3" />
-          <h3 class="font-bold text-base sm:text-lg">{s.title}</h3>
-          <p class="text-xs sm:text-sm text-gray-700 mb-3">{s.desc}</p>
-          <div class="flex justify-start gap-6">
-            <p class="text-sm font-semibold line-through">{s.price}</p>
-          <p class="text-sm font-semibold">{s.altprice}</p>
-          </div>
+    {#each stickers as s}
+  <div
+    on:click={() => openModal(s)}
+    class="flex-shrink-0 w-56 sm:w-64 bg-white text-black rounded-2xl shadow-lg p-4 cursor-pointer hover:scale-[1.02] transition"
+  >
+    <img
+      src={s.img}
+      alt={s.title}
+      class={`w-full h-40 sm:h-40 object-contain mb-3 transition-transform duration-300 ${
+        s.title === "Froggoo" ? "scale-150" : ""
+      }`}
+    />
+    <h3 class="font-bold text-base sm:text-lg">{s.title}</h3>
+    <p class="text-xs sm:text-sm text-gray-700 mb-3">{s.desc}</p>
+    <div class="flex justify-start gap-6">
+      <p class="text-sm font-semibold line-through">{s.price}</p>
+      <p class="text-sm font-semibold">{s.altprice}</p>
+    </div>
+  </div>
+{/each}
 
-        </div>
-      {/each}
     </div>
   </section>
 
