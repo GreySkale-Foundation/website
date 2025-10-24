@@ -66,7 +66,7 @@
 
         <div class="pt-20 sm:pt-80"></div>
 
-        <section class="h-auto snap-center" use:scrollReveal>
+        <section id="events" class="h-auto snap-center scroll-mt-10" use:scrollReveal>
             <Events />
         </section>
 

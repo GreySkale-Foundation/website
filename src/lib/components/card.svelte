@@ -124,7 +124,7 @@
               px-6 py-8">
     <h2 class="text-xl font-bold mb-4">Ping us!</h2>
     <a 
-      href="mailto:greyskalerobotics@gmail.com?subject=Psss.." 
+      href="mailto:greyskalerobotics@gmail.com?subject=Hello, I am []" 
       aria-label="Send us an email"
     >
       <img class="w-28 h-auto" src={MailImage} alt="Mail Us" />

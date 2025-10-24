@@ -35,6 +35,12 @@
   import lily from "$lib/assets/products/lily.png";
   import sunny from "$lib/assets/products/sunny.png";
 
+    import { goto } from '$app/navigation';
+
+  function goToEvents() {
+    goto('/#events')
+  }
+
   let menuOpen = false;
   let selectedSticker = null;
   let showAlt = false;
@@ -76,8 +82,8 @@
     <!-- Desktop Nav -->
     <div class="hidden md:flex items-center gap-8">
       <a href="#" class="hover:underline">Stickers</a>
-      <a href="#" class="hover:underline">Explore</a>
-      <a href="#" class="hover:underline">Contact us</a>
+      <button on:click={goToEvents} class="hover:underline">Explore</button>
+      <a href="mailto:greyskalerobotics@gmail.com?subject=Hello, I would like to buy" class="hover:underline">Contact us</a>
       <button class="text-xl">♡</button>
     </div>
 
