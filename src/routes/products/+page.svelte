@@ -16,13 +16,22 @@
     menuOpen = false
   }
   function toggleMenu(){
-    menuOpen != menuOpen
+    menuOpen = !menuOpen
   }
   function handleMobileExplore(){
     closeMenu()
     goToEvents()
   }
 </script>
+
+<svelte:head>
+  <style>
+    :global(html){
+      scroll-behavior : smooth;
+      scroll-snap-type : none;
+    }
+  </style>
+</svelte:head>
 
 <div class="min-h-screen bg-black text-white font-sans relative">
   <!-- Navbar -->
@@ -47,7 +56,7 @@
       class="md:hidden  cursor-pointer text-3xl focus:outline-none"
       aria-controls="mobile-menu"
       aria-expanded={menuOpen}
-      onclick={() => (menuOpen = !menuOpen)}
+      onclick={toggleMenu}
       > {menuOpen ? "✕" : "☰"}
     </button>
   </nav>
@@ -71,7 +80,7 @@
       <button class="text-xl">♡</button>
     </div>
   {/if}
-<main>
+<main class="scroll-smooth">
 
   <!-- Hero -->
   <section
