@@ -53,7 +53,7 @@
         <p class="text-lg font-semibold mb-4">{sticker.altprice}</p>
 
         <a
-          href="https://ig.me/greyskalerobotics" target="_blank"
+          href="https://www.instagram.com/p/DQQoquHE-bV/?igsh=b2Z6NzU1bDFia3D2" target="_blank"
           class="bg-black text-white px-4 py-2 rounded-lg hover:bg-gray-800 text-center transition w-full"
           >Get now</a
         >
